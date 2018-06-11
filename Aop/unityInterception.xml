@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<configuration>
+  <configSections>
+    <section name="unityInterception" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration"/>
+  </configSections>
+ 
+  <unityInterception>
+    <alias alias="MyClass" type="Aop.UnityMarshalByRefObject.Calculator, Aop" />
+    <alias alias="LogInterceptionBehavior" type="Aop.UnityMarshalByRefObject.LogInterceptionBehavior, Aop" />
+    <sectionExtension type="Microsoft.Practices.Unity.InterceptionExtension.Configuration.InterceptionConfigurationExtension, Microsoft.Practices.Unity.Interception.Configuration" />
+ 
+    <container name="MyInterception">
+      <extension type="Interception" />
+ 
+      <register type="MyClass">
+        <!-- Other children, like constructor or property -->
+        <interceptor type="TransparentProxyInterceptor" />
+        <interceptionBehavior name="LogBehavior" type="LogInterceptionBehavior" />
+        <policyInjection />
+      </register>
+    </container>
+ 
+  </unityInterception>
+  <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+    </startup>
+<appSettings>
+</appSettings>
+</configuration>
