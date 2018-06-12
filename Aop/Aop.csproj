@@ -111,6 +111,9 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AutofacPoxys\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <DontImportPostSharp>True</DontImportPostSharp>

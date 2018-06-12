@@ -33,3 +33,6 @@ D:\MyProject\Aop\Aop\obj\Debug\Aop.csprojResolveAssemblyReference.cache
 d:\Users\liuzw\Desktop\开发学习\Aop\Aop\Aop\bin\Debug\Aop.exe.config
 d:\Users\liuzw\Desktop\开发学习\Aop\Aop\Aop\obj\Debug\Aop.exe
 d:\Users\liuzw\Desktop\开发学习\Aop\Aop\Aop\obj\Debug\Aop.pdb
+G:\MyGitHubRepo\AOPTest\Aop\bin\Debug\Aop.exe.config
+G:\MyGitHubRepo\AOPTest\Aop\obj\Debug\Aop.exe
+G:\MyGitHubRepo\AOPTest\Aop\obj\Debug\Aop.pdb
